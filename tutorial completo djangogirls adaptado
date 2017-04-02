@@ -1,0 +1,56 @@
+tutorial completo djangogirls adaptado
+
+python3 -m venv myenv
+
+. myenv/bin/activate
+
+pip install django==1.8.5
+
+django-admin startproject meusite .
+
+{modifica algumas configs no settings.py dentro do dir meusite}
+
+python manage.py migrate
+
+python manage.py startapp flora
+
+{editar arquivo models.py dentro de flora}
+
+python manage.py makemigrations flora
+
+python manage.py migrate flora
+
+{editar o admin.py dentro de flora}
+
+python manage.py createsuperuser
+
+{deploy no python anywhere, instruções a seguir}
+
+git init
+git config user.name "fabiula"
+git config user.email fabiula.arantes@gmail.com
+git status
+
+{editar arquivo git ignore}
+
+git add --all .
+
+git commit -m "Primeiro commit, flora do campus"
+
+{criar repositorio no github}
+
+git remote add origin https://github.com/arantesfm/flora.git
+
+git push -u origin master
+
+{no console do python anywhere}
+
+git clone https://github.com/arantesfm/flora.git
+tree flora
+
+cd flora
+virtualenv --python=python3.4 myvenv
+
+python3 -m venv myenv
+
+source myvenv/bin/activate
