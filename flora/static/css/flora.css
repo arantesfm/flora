@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+h1 {
+  font-family: sans-serif;
+  font-size: 28pt;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+h2 {
+  font-family: sans-serif;
+  font-size: 16pt;
+  font-weight: normal; }
+
+#header {
+  height: 134px;
+  background-color: #008e98; }
+  #header div {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    clear: both; }
+    #header div img {
+      float: left; }
+    #header div ul {
+      display: inline-block;
+      float: right;
+      margin: 0;
+      padding: 20px 0;
+      text-align: right; }
+      #header div ul li {
+        color: #fff;
+        display: inline;
+        padding: 0 5px; }
+        #header div ul li a {
+          font-family: sans-serif;
+          font-size: 22px;
+          text-decoration: none;
+          color: #fff; }
+          #header div ul li a:hover {
+            color: #FF8C00;
+            font-size: 22px; }
+          #header div ul li a:before {
+            content: "\0BB \020"; }
+
+#title {
+  background-color: #fff;
+  font-family: Verdana, sans-serif; }
+  #title div {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    clear: both; }
+    #title div h1 {
+      font-size: 28pt;
+      float: left;
+      margin-top: 9px; }
+      #title div h1 em {
+        font-size: 30pt; }
+    #title div h2 {
+      float: right;
+      margin-top: 20px;
+      margin-right: 10px;
+      text-transform: uppercase; }
+
+#big-image {
+  clear: both;
+  height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#information div {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  clear: both; }
+  #information div p {
+    font-family: Verdana, sans-serif;
+    font-size: 12pt;
+    width: 650px;
+    margin-top: 9px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  #information div ul {
+    display: inline-block;
+    width: 250px;
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right; }
+    #information div ul li {
+      font-family: Verdana, sans-serif;
+      font-size: 12pt;
+      list-style: none;
+      background-color: #e5f3f4;
+      padding: 5px 5px 5px 15px;
+      margin: 1px; }
+
+#photos div {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  clear: both; }
+  #photos div h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 18pt;
+    width: 650px;
+    margin-top: 9px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #008e98;
+    clear: both; }
+  #photos div ul {
+    float: left;
+    width: 900px; }
+    #photos div ul li {
+      display: inline;
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      #photos div ul li a {
+        text-decoration: none; }
+      #photos div ul li img {
+        margin: 0 20px 20px 0; }
+
+#map {
+  clear: both; }
+  #map div {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    clear: both; }
+
+#reference div {
+  clear: both;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  clear: both; }
+  #reference div p {
+    font-family: sans-serif;
+    font-size: 12pt;
+    margin-bottom: 10px; }
+
+#footer {
+  height: 70px;
+  background-color: #696969;
+  clear: both;
+  padding-top: 10px; }
+  #footer div {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    clear: both; }
+    #footer div p {
+      font-family: sans-serif;
+      font-size: 12pt; }
+
+.long-text {
+  margin-top: 20px; }
+  .long-text div {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    clear: both; }
+    .long-text div p {
+      font-family: sans-serif;
+      font-size: 12pt;
+      padding-bottom: 20px;
+      line-height: 20px; }
+
+/* aqui vão testes de sass */
+
+/*# sourceMappingURL=output.css.map */
