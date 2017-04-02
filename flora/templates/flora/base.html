@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="{% static 'css/flora.css' %}">
+  </head>
+
+  <body>
+
+    <div id="header">
+      <div>
+
+
+        <img src="{% static 'imagens/logo-flora-do-campus.png' %}">
+
+          <ul>
+            <li><a href="projeto.html">O projeto</a></li>
+            <li><a href="hrcb.html">Herbario HRCB</a></li>
+            <li><a href="campus.html">O campus</a></li>
+            <li><a href="especies.html">As especies</a></li>
+          </ul>
+
+      </div>
+    </div>
+
+
+    <div id="information">
+
+      {% block content %}
+      {% endblock %}
+    </div>
+
+
+
+
+
+    <div id="footer">
+      <div>
+        <p>Projeto Flora do Campus &copy; Arantes, F.M. 2016/2017</p>
+      </div>
+
+    </div>
+
+
+
+
+
+  </body>
+</html>
