@@ -18,6 +18,7 @@ class Post(models.Model):
     origem = models.CharField(max_length=300)
     mapa = models.TextField()
     referencias = models.TextField()
+    
 
 
     created_date = models.DateTimeField(
