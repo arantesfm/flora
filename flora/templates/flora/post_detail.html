@@ -2,12 +2,41 @@
 
 {% block content %}
     <div class="post">
+
+    <div id="title">
+      <div>
+          <h1><em>{{ post.genero }} {{ post.especie }}</em> {{ post.autor }}</h1>
+          <h2>{{ post.familia }}</h2>
+      </div>    
+    </div>
+
+    <div id="big-image" style="background: url(imagens/Lecythis-pisonis/Lecythis-pisonis-01.jpg) no-repeat center center fixed; ">
+    </div>
+
+
+
+    <div id="information">
+      <div>
+          <ul>
+            <li>Habito: {{ post.habito }}</li>
+            <li>Nome Popular: {{ post.vernacular }}</li>
+            <li>Floracao: {{ post.floracao }}</li>
+            <li>Frutificação: {{ post.frutificacao }}</li>
+            <li>Origem: {{ post.origem }} </li>
+          </ul>
+        </div>
+
+        <p>{{ post.texto|linebreaksbr }}</p>
+    </div>
+
+
+
+
         {% if post.published_date %}
             <div class="date">
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+
     </div>
 {% endblock %}

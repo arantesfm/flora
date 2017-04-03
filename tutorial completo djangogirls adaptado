@@ -41,8 +41,6 @@ git commit -m "Primeiro commit, flora do campus"
 
 git remote add origin https://github.com/arantesfm/flora.git
 
-https://github.com/arantesfm/flora.git
-
 git push -u origin master
 
 {no console do python anywhere}
@@ -58,3 +56,5 @@ pip install whitenoise
 {instalando app no python anywhere}
 myvenv
 /home/fmarantes/flora/myvenv/
+
+editar wsgi

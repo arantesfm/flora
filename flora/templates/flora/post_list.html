@@ -2,14 +2,8 @@
 
 {% block content %}
     {% for post in posts %}
-
-
         <div class="post">
-        	<p>{{post.familia}}</p>
             <h1><a href="{% url 'flora.views.post_detail' pk=post.pk %}">{{ post.genero }} {{post.especie}}</a></h1>
-            <p>{{ post.texto|linebreaksbr }}</p>
-
-
         </div>
     {% endfor %}
 {% endblock content %}
