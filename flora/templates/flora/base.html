@@ -1,4 +1,5 @@
 {% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,6 +10,8 @@
   <body>
 
     <div id="header">
+<a href="{% url 'flora.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+
       <div>
 
         <img src="{% static 'imagens/logo-flora-do-campus.png' %}">
