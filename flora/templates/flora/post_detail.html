@@ -1,9 +1,7 @@
 {% extends 'flora/base.html' %}
-
-
+{% load static %}
 
 {% block content %}
-    <div class="post">
 
     <div id="title">
       <div>
@@ -13,6 +11,13 @@
 
       </div>    
     </div>
+
+    <div id="big-image" style="background: url({% static post.endereco_imagem %}) no-repeat center center fixed; ">
+
+    </div>
+
+
+
     <div id="information">
       <div>
           <ul>
@@ -22,14 +27,10 @@
             <li>Frutificação: {{ post.frutificacao }}</li>
             <li>Origem: {{ post.origem }} </li>
           </ul>
-        </div>
 
         <p>
-          {{ post.texto|linebreaksbr }}</p>
-    </div>
-
-
-
+          {{ post.texto|linebreaksbr }}
+        </p>
 
         {% if post.published_date %}
             <div class="date">
@@ -38,5 +39,13 @@
         {% endif %}
 
 
+      </div>
+
+
     </div>
+
+
+
+
+
 {% endblock %}

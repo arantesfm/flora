@@ -32,3 +32,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+    def endereco_imagem(self, foto=1):
+        return 'imagens/{0}-{1}/{0}-{1}-{2}.jpg'.format(self.genero, self.especie, foto)        

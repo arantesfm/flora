@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 85%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+  background: #ece4e4;
+  background-image: url("/static/img/books_back.jpg");
+  background-repeat: no-repeat;
+}
+.footer,
+.push {
+  height: 50px;
+}
+.header{
+    height: 50px;
+    background: #d4d0d0;
+    line-height: 2.5;
+    text-align: center;
+    font-size: 17pt;
+    color: green;
+    font-weight: 600;
+}
+.footer{
+    line-height: 3.5;
+    background: #d4d0d0;
+    text-align: center;
+    vertical-align: text-bottom;
+}
