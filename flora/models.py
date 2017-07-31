@@ -46,6 +46,8 @@ class Post(models.Model):
     def todas_imagens(self):
         pasta_do_genero = 'imagens/{}-{}'.format(self.genero, self.especie)
         caminho_completo_da_pasta = '{}/{}'.format(settings.STATIC_ROOT,pasta_do_genero)
+        if not os.path.exists(caminho_completo_da_pasta):
+            return []
         imagens_encontradas = []
         for img in os.listdir  (caminho_completo_da_pasta):
             if not img.startswith('ico'):
