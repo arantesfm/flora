@@ -58,3 +58,7 @@ myvenv
 /home/fmarantes/flora/myvenv/
 
 editar wsgi
+
+
+
+python manage.py collectstatic

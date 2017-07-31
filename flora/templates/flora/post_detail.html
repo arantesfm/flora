@@ -48,4 +48,58 @@
 
 
 
+
+
+
+
+
+
+
+<div id="photos">
+<div>
+<h1>Fotos</h1>
+
+<ul>
+{% for img_dict in post.todas_imagens %}
+<li>
+<a class="example-image-link" href="{% static img_dict.img %}" data-lightbox="example-set" data-title="Flor de Erythrina speciosa.">
+<img class="example-image" src="{% static img_dict.ico %}" width="200px" height="134px">
+</a>
+</li>
+
+{% endfor %}
+</ul>
+<script src="{% static 'js/lightbox-plus-jquery.min.js' %}"></script>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="map">
+      <div>
+        <h1>Ocorrências de <em>{{ post.genero }} {{ post.especie }}</em> no Campus</h1>
+
+<iframe src="https://www.google.com/maps/d/embed?mid={{ post.mapa }}" width="890" height="480"></iframe>
+
+
+      </div>
+    </div>
+
+
 {% endblock %}
