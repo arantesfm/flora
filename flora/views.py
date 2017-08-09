@@ -38,4 +38,7 @@ def post_edit(request, pk):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
-    return render(request, 'flora/post_edit.html', {'form': form})    
+    return render(request, 'flora/post_edit.html', {'form': form}) 
+
+def campus(request):
+    return render(request, 'flora/campus.html', {'posts': posts})

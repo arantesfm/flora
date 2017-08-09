@@ -31,9 +31,10 @@
         </p>
 
         {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
+        <p>
+          Data de publicação: {{ post.published_date }}
+        </p>
+
         {% endif %}
 
 
@@ -60,8 +61,10 @@
 <ul>
 {% for img_dict in post.todas_imagens %}
 <li>
-<a class="example-image-link" href="{% static img_dict.img %}" data-lightbox="example-set" data-title="Flor de Erythrina speciosa.">
-<img class="example-image" src="{% static img_dict.ico %}" width="200px" height="134px">
+<a class="example-image-link" href="{% static img_dict.img %}" data-lightbox="example-set" data-title="">
+
+  
+<img class="example-image" src="{% static img_dict.img %}" width="200px" height="134px">
 </a>
 </li>
 
@@ -99,5 +102,16 @@
       </div>
     </div>
 
+
+
+
+
+
+  <div id="reference">
+      <div>
+        <h1>Referências</h1>
+          <p>{{ post.referencias|linebreaksbr }}</p>
+      </div>
+    </div>
 
 {% endblock %}

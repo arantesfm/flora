@@ -3,7 +3,11 @@
 {% block content %}
     {% for post in posts %}
         <div id="information">
-            <h1><a href="{% url 'flora.views.post_detail' pk=post.pk %}">{{ post.genero }} {{post.especie}}</a></h1>
+        	<div>
+            	<a href="{% url 'flora.views.post_detail' pk=post.pk %}">
+            		<p>{{ post.genero }} {{post.especie}} ({{ post.familia }})</p>
+            	</a>
+            </div>
         </div>
     {% endfor %}
 {% endblock content %}

@@ -7,7 +7,6 @@ from django.conf import settings
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
-    
     familia = models.CharField(max_length=300)
     genero = models.CharField(max_length=300)
     especie = models.CharField(max_length=300)
