@@ -1,13 +1,24 @@
 {% extends 'flora/base.html' %}
 
 {% block content %}
+
+
+<div id="title">
+	<div>
+       	<h1>Lista de Espécies do Campus</h1>
+    </div>    
+</div>
+
+
+<div id="information">
     {% for post in posts %}
-        <div id="information">
+    		
         	<div>
             	<a href="{% url 'flora.views.post_detail' pk=post.pk %}">
-            		<p>{{ post.genero }} {{post.especie}} ({{ post.familia }})</p>
+            		{{ post.genero }} {{post.especie}} ({{ post.familia }})
             	</a>
             </div>
-        </div>
     {% endfor %}
+</div>
+
 {% endblock content %}

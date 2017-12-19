@@ -101,6 +101,18 @@ h2 {
       padding: 5px 5px 5px 15px;
       margin: 1px; }
 
+    #information div a {
+      font-family: Verdana, sans-serif;
+      font-size: 14pt;
+      color: #008e98;
+      text-decoration: none;}
+
+    #information div a:hover {
+      color: #FF8C00;
+      text-decoration: underline;}
+
+      
+
 #photos div {
   max-width: 940px;
   margin: 0 auto;
@@ -202,6 +214,13 @@ h2 {
       font-size: 12pt;
       padding-bottom: 20px;
       line-height: 20px; }
+
+h1 {
+  font-family: sans-serif;
+  font-size: 28pt;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 /* aqui vão testes de sass */
 

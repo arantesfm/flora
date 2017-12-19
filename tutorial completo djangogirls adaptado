@@ -8,7 +8,7 @@ pip install django==1.8.5
 
 django-admin startproject meusite .
 
-{modifica algumas configs no settings.py dentro do dir meusite}
+{modifica algumas configsx no settings.py dentro do dir meusite}
 
 python manage.py migrate
 
@@ -59,6 +59,31 @@ myvenv
 
 editar wsgi
 
-
-
 python manage.py collectstatic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+procedimento de publicacao do site
+
+no terminal local
+
+git status
+git add --all .
+git push -u origin master
+git commit -m "Primeiro commit, flora do campus"
+
+
+no python anywhere
+
