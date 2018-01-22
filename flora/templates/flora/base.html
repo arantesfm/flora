@@ -4,56 +4,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-	<link rel="stylesheet" href="{% static 'css/flora.css' %}">
-  <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">  
+    <link rel="stylesheet" href="{% static 'css/flora.css' %}">
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
   </head>
 
   <body>
-
     <div id="header">
       <div>
-
-        <img src="{% static 'imagens/logo-flora-do-campus.png' %}">
-
-          <ul>
-            <li><a href="projeto.html">O projeto</a></li>
-            <li><a href="hrcb.html">Herbario HRCB</a></li>
-            <li><a href="">O campus</a></li>
-            <li><a href="{% url 'flora.views.post_list' %}">As especies</a></li>
-          </ul>
-
-
-
+      <a href="/"><img src="{% static 'imagens/logo-flora-do-campus.png' %}"></a>
+        <ul>
+          <li><a href="{% url 'flora.views.project' %}">O projeto</a></li>
+          <li><a href="{% url 'flora.views.hrcb' %}">Herbario HRCB</a></li>
+          <li><a href="{% url 'flora.views.campus' %}">O campus</a></li>
+          <li><a href="{% url 'flora.views.species_categories' %}">As espécies</a></li>
+        </ul>
       </div>
     </div>
 
-
-
-      {% block content %}
-      {% endblock %}
-
-
-
+    {% block content %}
+    {% endblock %}
 
     <div id="footer" style="background: url({% static post.endereco_imagem %}) no-repeat center center fixed; ">
-
-      <div>        
-         <ul>
-            <li><a href="projeto.html">O projeto</a></li>
-            <li><a href="hrcb.html">Herbario HRCB</a></li>
-            <li><a href="">O campus</a></li>
-            <li><a href="{% url 'flora.views.post_list' %}">As especies</a></li>
-          </ul>
+      <div>
+        <ul>
+          <li><a href="{% url 'flora.views.project' %}">O projeto</a></li>
+          <li><a href="{% url 'flora.views.hrcb' %}">Herbario HRCB</a></li>
+          <li><a href="{% url 'flora.views.campus' %}">O campus</a></li>
+          <li><a href="{% url 'flora.views.species_categories' %}">As espécies</a></li>
+        </ul>
       </div>
-
       <div><p>Projeto Flora do Campus &copy; Arantes, F.M. 2016/2017</p></div>
-      
-
     </div>
-
-
-
-
 
   </body>
 </html>
