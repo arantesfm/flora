@@ -9,6 +9,9 @@
 </div>
 
 <div id="information">
+
+
+
 {% for specie in species %}
 	<div>
 		<a href="{% url 'flora.views.post_detail' pk=specie.pk %}">
