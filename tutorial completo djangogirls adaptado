@@ -68,11 +68,20 @@ python manage.py collectstatic
 
 
 
+abrir as seguintes abas
 
+#site local
+http://127.0.0.1:8000/especies/categoria/familia/
 
+#making queries
+https://docs.djangoproject.com/en/1.8/topics/db/queries/
 
+#site pythonanywhere
+http://floradocampus.pythonanywhere.com/
 
+#console pythonanywhere
 
+#github conectado como arantesfm
 
 
 procedimento de publicacao do site
@@ -92,5 +101,8 @@ REINICIAR O FODENDO SERVIDOR NO PYTHONANYWHERE!!!
 #porque eu tô EMPURRANDO o código pro GITHUB *lara croft puxando o bloco*
 
 
+#criar um template com base em flora/templates/flora/list_species.html
+#duplicar o arquivo flora/templates/flora/list_species.html
+#renomear para o novo nome
 
 
