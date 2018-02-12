@@ -28,8 +28,15 @@ def list_species_by_name(request):
 
 
 def list_species_by_family(request):
-    species = Post.objects.all().order_by('familia')
-    return render(request, 'flora/list_species.html', {'species': species, 'view': 'Família'})
+    all_species = Post.objects.all().order_by('familia')
+    species_by_family = {}
+
+    for specie in all_species:
+        if not specie.familia in species_by_family.keys():
+            species_by_family[specie.familia] = []
+        species_by_family[specie.familia].append(specie)
+
+    return render(request, 'flora/list_species_by_family.html', {'species_by_family': species_by_family, 'view': 'Família'})
 
 
 def list_species_by_genre(request):
