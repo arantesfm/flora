@@ -1,0 +1,29 @@
+{% extends 'flora/base.html' %}
+
+{% block content %}
+
+<div id="title">
+	<div>
+		<h1>Lista de Espécies do Campus (por: {{ view }})</h1>
+	</div>
+</div>
+
+<div id="information">
+
+{% for family, species in species_by_family.items %}
+	<div><span><b>- {{ family }}</b></span>
+
+	{% for specie in species %}
+		<div>
+			<a href="{% url 'flora.views.post_detail' pk=specie.pk %}">
+				{{ specie.genero }} {{ specie.especie }} ({{ specie.familia }})
+			</a>
+		</div>
+	{% endfor %}
+
+	</div>
+{% endfor %}
+
+</div>
+
+{% endblock content %}
