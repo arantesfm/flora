@@ -4,26 +4,28 @@
 
 <div id="title">
 	<div>
-		<h1>Lista de Espécies do Campus (por: {{ view }})</h1>
+		<h1>Ordem alfabética de {{ view }}</h1>
 	</div>
 </div>
 
-<div id="information">
-
+<div id="listagem">
+<div>
 {% for family, species in species_by_family.items %}
-	<div><span><b>- {{ family }}</b></span>
 
+	<p>{{ family }}</p>
+
+	<ul>
 	{% for specie in species %}
-		<div>
-			<a href="{% url 'flora.views.post_detail' pk=specie.pk %}">
-				{{ specie.genero }} {{ specie.especie }} ({{ specie.familia }})
-			</a>
-		</div>
+	<li>
+		<a href="{% url 'flora.views.post_detail' pk=specie.pk %}">
+			{{ specie.genero }} {{ specie.especie }}
+		</a>
+	</li>
 	{% endfor %}
 
-	</div>
+	<ul>
 {% endfor %}
-
+</div>
 </div>
 
 {% endblock content %}

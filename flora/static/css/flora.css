@@ -141,6 +141,57 @@ h2 {
       #photos div ul li img {
         margin: 0 20px 20px 0; }
 
+
+
+
+
+
+
+#listagem div {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  clear: both; }
+ 
+
+  #listagem p {
+    font-family: Verdana, sans-serif;
+    font-size: 15pt;
+    margin-top: 35px;
+    display: block;
+    color: #000;
+    clear: both; 
+    text-transform: uppercase; }
+
+  #listagem ul {
+    float: left;
+       }
+
+    #listagem ul li {
+      padding: 4px 20px;
+      font-family: Verdana, sans-serif;
+      font-size: 12pt;
+      list-style: none;
+      background-color: #fff;
+       }
+
+    #listagem a {
+      font-family: Verdana, sans-serif;
+      font-style: italic;
+      font-size: 14pt;
+      color: #000;
+      text-decoration: none;}
+
+    #listagem a:hover {
+      color: #008e98;
+      text-decoration: underline;}
+
+      
+
+
+
+
+
 #map {
   clear: both; }
   #map div {

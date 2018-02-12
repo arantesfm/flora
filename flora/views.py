@@ -45,9 +45,9 @@ def list_species_by_family(request):
     return render(request, 'flora/list_species_by_family.html', {'species_by_family': species_by_family, 'view': 'Família'})
 
 
-def list_species_by_genre(request):
-    species = Post.objects.all().order_by('genero')
-    return render(request, 'flora/list_species.html', {'species': species, 'view': 'Gênero'})
+def list_species_by_vernacular(request):
+    species = Post.objects.all().order_by('vernacular')
+    return render(request, 'flora/list_species.html', {'species': species, 'view': 'Nome Popular'})
 
 
 def list_species_by_specie(request):
