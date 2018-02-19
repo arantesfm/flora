@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^especies/categoria/especie/', views.list_species_by_specie),
 
     url(r'^$', RedirectView.as_view(url='/especies/categoria/nome/')),
+    url(r'^fabiula/$', views.fabiula),
 ]

@@ -18,6 +18,11 @@ def hrcb(request):
     return render(request, 'flora/hrcb.html')
 
 
+def fabiula(request):
+    nome='Fabiula'
+    return render(request, 'flora/fabiula.html',{'euzinha':nome})
+
+
 def species_categories(request):
     return render(request, 'flora/species_categories.html')
 
@@ -47,7 +52,7 @@ def list_species_by_family(request):
 
 def list_species_by_vernacular(request):
     species = Post.objects.all().order_by('vernacular')
-    return render(request, 'flora/list_species.html', {'species': species, 'view': 'Nome Popular'})
+    return render(request, 'flora/vernacular.html', {'species': species, 'view': 'Nome Popular'})
 
 
 def list_species_by_specie(request):
@@ -87,3 +92,5 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'flora/post_edit.html', {'form': form})
+
+

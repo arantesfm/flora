@@ -53,23 +53,8 @@
 
 <div id="title">
 	<div>
-		<h1>Bem-vindo (a) ao Flora do Campus</h1>
+		<h1>Bem-vinda {{euzinha}}!</h1>
 	</div>
 </div>
 
-<div id="listagem">
-<div>
-
-<ul>
-{% for specie in species %}
-<li>
-		<a href="{% url 'flora.views.post_detail' pk=specie.pk %}">
-			{{ specie.genero }} {{ specie.especie }}
-		</a>
-</li>
-
-{% endfor %}
-</ul>
-</div>
-</div>
 {% endblock content %}

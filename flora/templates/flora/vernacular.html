@@ -1,6 +1,8 @@
 {% extends 'flora/base.html' %}
+{% load static %}
 
 {% block content %}
+
 
 <div id="title">
 	<div>
@@ -8,15 +10,19 @@
 	</div>
 </div>
 
-<div id="information">
+<div id="listagem">
+<div>
 
+<ul>
 {% for specie in species %}
-	<div>
+<li>
 		<a href="{% url 'flora.views.post_detail' pk=specie.pk %}">
-			{{ specie.genero }} {{ specie.especie }}
+			{{ genero }}
 		</a>
-	</div>
-{% endfor %}
-</div>
+</li>
 
+{% endfor %}
+</ul>
+</div>
+</div>
 {% endblock content %}
