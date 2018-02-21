@@ -17,8 +17,7 @@ urlpatterns = [
     url(r'^especies/categoria/nome/', views.list_species_by_name),
     url(r'^especies/categoria/familia/', views.list_species_by_family),
     url(r'^especies/categoria/vernacular/', views.list_species_by_vernacular),
-    url(r'^especies/categoria/especie/', views.list_species_by_specie),
 
-    url(r'^$', RedirectView.as_view(url='/especies/categoria/nome/')),
-    url(r'^fabiula/$', views.fabiula),
+    url(r'^$', RedirectView.as_view(url='fabiula/')),
+    url(r'^fabiula/$', views.pagina_inicial),
 ]

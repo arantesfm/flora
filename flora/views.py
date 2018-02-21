@@ -6,6 +6,10 @@ from .forms import PostForm
 from django.shortcuts import redirect
 from collections import OrderedDict
 
+def pagina_inicial(request):
+    return render(request, 'flora/home.html')
+
+
 def project(request):
     return render(request, 'flora/project.html')
 
@@ -53,11 +57,6 @@ def list_species_by_family(request):
 def list_species_by_vernacular(request):
     species = Post.objects.all().order_by('vernacular')
     return render(request, 'flora/vernacular.html', {'species': species, 'view': 'Nome Popular'})
-
-
-def list_species_by_specie(request):
-    species = Post.objects.all().order_by('especie')
-    return render(request, 'flora/list_species.html', {'species': species, 'view': 'Espécie'})
 
 
 def post_detail(request, pk):

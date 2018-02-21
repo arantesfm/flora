@@ -17,15 +17,28 @@
           <li><a href="{% url 'flora.views.project' %}">O projeto</a></li>
           <li><a href="{% url 'flora.views.hrcb' %}">Herbario HRCB</a></li>
           <li><a href="{% url 'flora.views.campus' %}">O campus</a></li>
-          <li><a href="{% url 'flora.views.species_categories' %}">As espécies</a></li>
+
+<li class="dropdown">
+
+  <a>Lista de espécies</a>
+  <div class="dropdown-content">
+    <a href="{% url 'flora.views.list_species_by_name' %}">Nome científico</a>
+    <a href="{% url 'flora.views.list_species_by_family' %}">Famílias</a>
+    <a href="{% url 'flora.views.list_species_by_vernacular' %}">Nome popular</a>
+  </div>
+</li>
         </ul>
+
+
+
+
       </div>
     </div>
 
     {% block content %}
     {% endblock %}
 
-    <div id="footer" style="background: url({% static post.endereco_imagem %}) no-repeat center center fixed; ">
+    <div id="footer" style="background: url({% static 'imagens/fundo-rodape.jpg' %}) no-repeat center center fixed; ">
       <div>
         <ul>
           <li><a href="{% url 'flora.views.project' %}">O projeto</a></li>
@@ -34,7 +47,7 @@
           <li><a href="{% url 'flora.views.species_categories' %}">As espécies</a></li>
         </ul>
       </div>
-      <div><p>Projeto Flora do Campus &copy; Arantes, F.M. 2016/2017</p></div>
+      <div><p>Projeto Flora do Campus &copy; Arantes, F.M. 2018</p></div>
     </div>
 
   </body>

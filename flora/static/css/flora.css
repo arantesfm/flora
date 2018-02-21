@@ -46,6 +46,47 @@ h2 {
           #header div ul li a:before {
             content: "\0BB \020"; }
 
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #008e98;
+    text-align: left;
+}
+
+.dropdown-content a {
+    padding: 10px 0 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #008e98}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+}
+
+
+
 #title {
   background-color: #fff;
   font-family: Verdana, sans-serif; }
@@ -55,7 +96,7 @@ h2 {
     padding: 0 10px;
     clear: both; }
     #title div h1 {
-      font-size: 28pt;
+      font-size: 20pt;
       float: left;
       margin-top: 9px; }
       #title div h1 em {
@@ -144,7 +185,45 @@ h2 {
 
 
 
+#pagina_principal div {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  clear: both; }
+ 
 
+  #pagina_principal p {
+    font-family: Verdana, sans-serif;
+    font-size: 15pt;
+    width: 300px;
+    float: left;
+  }
+
+#paginas_estaticas div {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  clear: both; }
+  #paginas_estaticas div p {
+    font-family: Verdana, sans-serif;
+    font-size: 12pt;
+    width: 650px;
+    margin-top: 9px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  #paginas_estaticas div ul {
+    display: inline-block;
+    width: 250px;
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right; }
+    #paginas_estaticas div ul li {
+      font-family: Verdana, sans-serif;
+      font-size: 12pt;
+      list-style: none;
+      padding: 0;
+      margin: 0; }
 
 
 #listagem div {
@@ -191,7 +270,6 @@ h2 {
 
 
 
-
 #map {
   clear: both; }
   #map div {
@@ -212,7 +290,7 @@ h2 {
     margin-bottom: 10px; }
 
 #footer {
-  height: 400px;
+  height: 200px;
   background-color: #696969;
   clear: both;
   padding-top: 10px; }
@@ -226,7 +304,9 @@ h2 {
       font-family: sans-serif;
       font-size: 12pt;
       color: #fff; 
-      background-color: #000;}
+      background-color: #000;
+      border-radius: 20px;
+      }
     #footer div ul {
       list-style-type: none;      
       display: block;
@@ -281,10 +361,7 @@ h1 {
 
 
 
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
-img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
@@ -350,3 +427,4 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+

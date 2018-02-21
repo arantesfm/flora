@@ -6,7 +6,7 @@
 
 <div id="title">
 	<div>
-		<h1>Bem-vindo (a) ao Flora do Campus</h1>
+		<h1>Lista de espécies: nome popular</h1>
 	</div>
 </div>
 
@@ -17,7 +17,7 @@
 {% for specie in species %}
 <li>
 		<a href="{% url 'flora.views.post_detail' pk=specie.pk %}">
-			{{ genero }}
+			{{ specie.vernacular }}
 		</a>
 </li>
 
